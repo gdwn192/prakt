@@ -7,7 +7,7 @@ public abstract class Flower {
 
     public Flower(String name, double price) {
         this.name = name;
-        this.price = price; //dewdwd
+        this.price = price; //тест
     }
 
     public String getName() {
