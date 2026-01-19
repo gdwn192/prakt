@@ -34,8 +34,8 @@ public class MyArrayList<E> implements Iterable<E> {
         }
     }
 
-    // Заменили [] на ... (теперь можно перечислять элементы через запятую)
-    @SafeVarargs
+    // Заменяем E[] на E... (это и есть аналог *args)
+    @SafeVarargs // Эта аннотация нужна, чтобы Java не ругалась на дженерики в varargs
     public MyArrayList(E... array) {
         if (array != null && array.length > 0) {
             this.elementData = Arrays.copyOf(array, array.length);
